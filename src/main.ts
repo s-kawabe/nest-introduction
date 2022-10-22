@@ -1,3 +1,7 @@
+/**
+ * main.tsはアプリケーションが実行される際のエントリポイント
+ */
+
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
