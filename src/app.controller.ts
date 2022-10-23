@@ -1,8 +1,8 @@
 /**
  * moduleの子要素、ルーティングに関わる処理を記述する
  */
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Controller, Get } from '@nestjs/common'
+import { AppService } from './app.service'
 
 // @Controllerの引数はパスを指定できる、デフォルトはルートディレクトリになる
 // "root"を指定するとlocalhost:3000/root
@@ -17,6 +17,6 @@ export class AppController {
   // こちらでもパス指定ができる。@Controllerにも指定していた場合はその一個下の階層からの話になる
   @Get()
   getHello(): string {
-    return this.appService.getHello();
+    return this.appService.getHello()
   }
 }
